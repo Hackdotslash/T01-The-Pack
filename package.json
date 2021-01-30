@@ -1,0 +1,23 @@
+{
+  "name": "t01-the-pack",
+  "version": "1.0.0",
+  "description": "Official Repository for DotSlash 4.0 Submission of Team 01: The Pack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hackdotslash/T01-The-Pack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hackdotslash/T01-The-Pack/issues"
+  },
+  "homepage": "https://github.com/Hackdotslash/T01-The-Pack#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "shelljs": "^0.8.4"
+  }
+}
