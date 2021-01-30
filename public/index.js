@@ -11,10 +11,10 @@ var fun1 = function () {
 	}, 800);
 	setTimeout(function () {
 		$('#main-div2').fadeOut(700);
-	}, 5800);
+	}, 10800);
 	setTimeout(function () {
 		$('#main-div3').fadeIn('slow');
-	}, 6550);
+	}, 11550);
 
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
@@ -29,6 +29,7 @@ var fun1 = function () {
 			document.getElementById('label').innerHTML = xhttp.responseText;
 		}
 	};
-	xhttp.open("GET", "http://127.0.0.1:5000/detect", true);
+	xhttp.open("GET", "http://127.0.0.1:6789/detect", true);
 	xhttp.send();
+
 }
