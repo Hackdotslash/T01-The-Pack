@@ -16,7 +16,7 @@ app = Flask(__name__)
 def translate(text):
     return translator.translate(text)
 
-@app.route("/salil")
+@app.route("/detect")
 def main():
     file_name = "temp.wav"
     shutil.rmtree("data/")
