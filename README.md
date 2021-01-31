@@ -6,7 +6,9 @@ Official Repository for DotSlash 4.0 Submission of Team 01: The Pack
 ``` Problem Statement - Education for The Differently Abled ```
 
 This application is developed to help deaf people interact with others with ease.
-It detects voice and converts the input speech into a sign language based video.
+It detects voice and converts the input speech into a sign language based video.While capture the sign language of 
+deaf person and convert it into Transcript which can be ready by someone.
+Communication takes place easily without any translator.
 
 ### Prerequisites
 
@@ -17,7 +19,6 @@ What things you need to install the software and how to install them
 
 ### Running the Platform
 
-
 1. Run python main.py
 2. Record your voice for 5 seconds.
 3. wait for the processing to be done.
@@ -25,7 +26,10 @@ What things you need to install the software and how to install them
 
 
 ## Important Links
-* Presentation - [PPT Link](https://www.canva.com/design/DAEUsKLXkNA/MNQYiQTaVjIRVz7yKae8Qg/view?utm_content=DAEUsKLXkNA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+* Presentation - [PPT Link](https://drive.google.com/file/d/1lvuJSCcaa_ew3WsUG6XUc2pMf76hf6C6/view?usp=sharing)
+* Video Link - [Youtube Video](https://youtu.be/B0lYrgWDRS4)
+* Submission Link - [Submission Link](https://devpost.com/software/sanket)
+
 
 
 ## Mentors Suggestion
