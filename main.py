@@ -8,10 +8,10 @@ import time
 from flask import Flask
 from google_trans_new import google_translator
 translator = google_translator()
-#from flask_cors import CORS
+from flask_cors import CORS
 
 app = Flask(__name__)
-#CORS(app)
+CORS(app)
 
 def translate(text):
     return translator.translate(text)
@@ -35,6 +35,7 @@ def main():
     # Read URLs from handspeak.com
     for i, url in enumerate(modified_urls):
         r = requests.get("https://handspeak.com/word/" + url)
+        print("https://handspeak.com/word/" + url)
         if r.text[:15] == "<!DOCTYPE html>":
             letters = list(list_words[i])
             c = []
@@ -61,7 +62,18 @@ def main():
     os.system("xdg-open final_clip.mp4")
     return spoken_text
 
-#main()
+@app.route('/realtime')
+def realtime():
+    text='sky'
+    url = text[0]+'/'+ text +'.mp4'
+    r = requests.get("https://handspeak.com/word/" + url)
+    f = open("data/%s.mp4" % text, 'wb')
+    for chunk in r.iter_content(chunk_size=255):
+        if chunk:
+            f.write(chunk)
+    f.close()
+    return 'done'
+
 
 if __name__ == "__main__":
 	app.run(host='127.0.0.1',port=6789)

@@ -27,9 +27,31 @@ var fun1 = function () {
 				$('#main-div').fadeIn('slow');
 			}, 800);
 			document.getElementById('label').innerHTML = xhttp.responseText;
+
 		}
 	};
 	xhttp.open("GET", "http://127.0.0.1:6789/detect", true);
 	xhttp.send();
 
+}
+
+const realtime = () => {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function () {
+		if (this.readyState == 4 && this.status == 200) {
+			$('#btn').removeAttr('disabled');
+			setTimeout(function () {
+				$('#main-div3').fadeOut(700);
+			}, 0);
+			setTimeout(function () {
+				$('#main-div').fadeIn('slow');
+			}, 800);
+			document.getElementById('label').innerHTML = xhttp.responseText;
+			console.log(xhttp.responseText);
+
+		}
+	};
+	console.log('real')
+	xhttp.open("GET", "http://127.0.0.1:6789/realtime", true);
+	xhttp.send();
 }
