@@ -4,7 +4,8 @@ Official Repository for DotSlash 4.0 Submission of Team 01: The Pack
 # PROJECT SANKET
 
 This application is developed to help deaf people interact with others with ease.
-It detects voice and converts the input speech into a sign language based video.
+It detects voice and converts the input speech into a sign language based video. Our model is more accurate with English while we have built
+it multilangual too.
 
 ### Prerequisites
 
@@ -30,6 +31,10 @@ What things you need to install the software and how to install them
 ## Future Works [WiP]
 * Sign language recognition via image processing and deep learning and converting it to text and speech.
 * Full Fledged platform for 2 way interaction to be developed.
+
+## Important Links
+* Presentation - [PPT Link](https://www.canva.com/design/DAEUsKLXkNA/MNQYiQTaVjIRVz7yKae8Qg/view?utm_content=DAEUsKLXkNA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
+
 
 ## Authors
 
