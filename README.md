@@ -33,8 +33,8 @@ What things you need to install the software and how to install them
 
 
 ## Mentors Suggestion
-* Suggestion 1 - To make the user voice input multilingual.
-* Suggestion 2 - To build the other of communication i.e from Sign Language to Transcript.
+* Suggestion 1 - To make the user voice input multilingual. (Completed)
+* Suggestion 2 - To build the other of communication i.e from Sign Language to Transcript. (Completed)
 
 
 ## Authors
