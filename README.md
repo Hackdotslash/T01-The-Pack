@@ -17,7 +17,7 @@ What things you need to install the software and how to install them
 
 ### Running the Platform
 
- 
+
 1. Run python main.py
 2. Record your voice for 5 seconds.
 3. wait for the processing to be done.
@@ -28,7 +28,7 @@ What things you need to install the software and how to install them
 * Presentation - [PPT Link](https://www.canva.com/design/DAEUsKLXkNA/MNQYiQTaVjIRVz7yKae8Qg/view?utm_content=DAEUsKLXkNA&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 
-## Mentors Suggestion 
+## Mentors Suggestion
 * Suggestion 1 - To make the user voice input multilingual.
 * Suggestion 2 - To build the other of communication i.e from Sign Language to Transcript.
 
@@ -40,6 +40,6 @@ What things you need to install the software and how to install them
 * **Rishav Sharma** - [flarsu](https://github.com/flarsu)
 
  ## Acknowledgments
- 
+
 * https://handspeak.com/word/ for public repo of sign videos.
 * Made with &#9829; during DOTSLASH Hackathon 2021 in 24 hrs.
