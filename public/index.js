@@ -35,23 +35,27 @@ var fun1 = function () {
 
 }
 
-const realtime = () => {
+const realtime = (id) => {
+	setTimeout(function () {
+		document.getElementById('realtime-btn').innerHTML = 'Start Recording Audio';
+	}, 10000)
+	document.getElementById('realtime-btn').innerHTML = 'Recording Audio .....'
+	document.getElementById('realtime-btn').setAttribute('class', 'btn btn-danger mt-5')
+
+	var video = document.getElementById('video-div');
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
-			$('#btn').removeAttr('disabled');
-			setTimeout(function () {
-				$('#main-div3').fadeOut(700);
-			}, 0);
-			setTimeout(function () {
-				$('#main-div').fadeIn('slow');
-			}, 800);
-			document.getElementById('label').innerHTML = xhttp.responseText;
-			console.log(xhttp.responseText);
+			document.getElementById('responseText').innerHTML = xhttp.responseText;
+			document.getElementById('realtime-btn').setAttribute('class', 'btn btn-success mt-5')
 
+
+			console.log(xhttp.responseText);
+			video.setAttribute('src', 'final_clip.mp4');
+			video.load();
+			video.play();
 		}
 	};
-	console.log('real')
-	xhttp.open("GET", "http://127.0.0.1:6789/realtime", true);
+	xhttp.open("GET", "http://127.0.0.1:6789/detect", true);
 	xhttp.send();
 }

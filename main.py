@@ -57,9 +57,8 @@ def main():
 
     final_clip = mp.concatenate_videoclips(clips, method="compose")
 
-    final_clip.write_videofile("final_clip.mp4")
+    final_clip.write_videofile("public/final_clip.mp4")
     time.sleep(1)
-    os.system("xdg-open final_clip.mp4")
     return spoken_text
 
 @app.route('/realtime')

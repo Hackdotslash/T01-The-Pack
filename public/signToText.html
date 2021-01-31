@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Sanket</title>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -9,31 +10,35 @@
 	<script type="text/javascript" src="index.js"></script>
 </head>
 
-<body>
+<body style="background-color: antiquewhite;">
 
 	<div class="signToText">
-		<h1 class="text-center pt-5"> PROJECT <b>SANKET</b></h1>
+		<h1 class="text-center pt-5"> <b>PROJECT SANKET</b></h1>
 		<h5 class="text-center pb-5">Now Deaf and Normal Human will Interact very smoothly without much effort.</h5>
-	
+
 		<div class="container">
-		<div class="row">
-			<div class="col-md-5 py-5">
+			<div class="row">
+				<div class="col-md-6 py-5 text-center">
+					<span class="py-5">
+						<h4 class="text-uppercase py-5 mt-5" id="recievedLetter">Realtime audio input</h4>
+						<button onclick="realtime(this.id);" id="realtime-btn" type="button" class="btn btn-success mt-5">Start
+							Recording Audio</button>
+					</span>
+				</div>
 
-				<span class="float-right py-5">
-					<h4 class="text-uppercase py-5" id="recievedLetter">Uppercased</h4>
-					<button type="button" class="btn btn-success mt-5">Word Completed</button>
-				</span>
+				<div class="col-md-6 py-5">
+					<div class="py-5" id="img-div">
+						<img id="img-div" style="height:30rem;display: none;"
+							src="images/two-confident-young-men-are-shaking-hands-together-vector-21008303.jpg" />
+						<video id="video-div" src="z-abc.mp4" controls></video>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-3">
 
-			</div>
-			<div class="col-md-4 py-5">
-				<div class="py-5">
-					<img class="imageContainer" src="./images/two-confident-young-men-are-shaking-hands-together-vector-21008303.jpg" alt ="text image"/>
+			<div>
+				<p id="responseText"></p>
 			</div>
 		</div>
-	</div>
-</div>	
 
 </body>
 
