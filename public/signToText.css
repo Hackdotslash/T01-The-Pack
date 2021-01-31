@@ -1,0 +1,9 @@
+.signToText {
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+.imageContainer {
+  width: 25em;
+  height: 25em;
+}
