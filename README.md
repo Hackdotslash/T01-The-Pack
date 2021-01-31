@@ -27,7 +27,7 @@ What things you need to install the software and how to install them
 
 ## Important Links
 * Presentation - [PPT Link](https://drive.google.com/file/d/1lvuJSCcaa_ew3WsUG6XUc2pMf76hf6C6/view?usp=sharing)
-* Video Link - [Youtube Video](https://youtu.be/B0lYrgWDRS4)
+* Video Link - [Youtube Video](https://youtu.be/H4cZBT86_ok)
 * Submission Link - [Submission Link](https://devpost.com/software/sanket)
 
 
